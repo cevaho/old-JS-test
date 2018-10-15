@@ -1,4 +1,10 @@
-
+/*
+I used to modify existing script like slideshow, lightbox, countdown, form validation
+I also added coockies information depending on products, to hide or to show message depending on coockies
+but before this simple exercise, I have never used the real programation object,
+that's why I think it's interesting to show it
+the result will be seen in console, it's a small "game"w with heroes, monsters and properties
+*/
 
 
 var Personnage={
@@ -30,17 +36,17 @@ var Personnage={
 var Joueur = Object.create(Personnage);
 	Joueur.initJoueur=function(nom,force,vie,or,cle){
 		this.initPerso(nom,force,vie,or,cle);
-		this.xp=0;//les joueurs auront des point d'experience mais pas les méchants construits avec le prototype personnage
+		this.xp=0;//les joueurs auront des point d'experience mais pas les mÃ©chants construits avec le prototype personnage
 	};
 	Joueur.decrire=function(){
 		var description="le Heros "+this.nom+", points de force : "+this.force+", points de vie : "+this.vie+
-		", points d'experience : "+this.xp+", il possède "+this.or+" pièces d'or, et "+this.cle+" clé(s)";
+		", points d'experience : "+this.xp+", il possÃ¨de "+this.or+" piÃ¨ces d'or, et "+this.cle+" clÃ©(s)";
 		return description;
 	};
 	Joueur.combattre=function(cible){
 			this.attaquer(cible);
 			if(cible.vie < 0){
-				console.log("le gros mechant "+cible.nom+" a ete tue par "+this.nom+" et lui donne "+cible.valeur+" points d'experience, ainsi que "+cible.or+" pièces d'or et "+cible.cle+" clé(s)");
+				console.log("le gros mechant "+cible.nom+" a ete tue par "+this.nom+" et lui donne "+cible.valeur+" points d'experience, ainsi que "+cible.or+" piÃ¨ces d'or et "+cible.cle+" clÃ©(s)");
 				this.xp=this.xp+cible.valeur;
 				this.or=this.or+cible.or;
 				this.cle=this.cle+cible.cle;
@@ -57,7 +63,7 @@ var Mechant=Object.create(Personnage);
 	
 	Mechant.decrire2=function(){
 		var description2="le mechant "+this.nom+", points de force : "+this.force+", points de vie : "+this.vie+
-		", de race : "+this.race+" et de valeur : "+this.valeur+", il possède "+this.or+" pièces d'or, et "+this.cle+" clé(s)";
+		", de race : "+this.race+" et de valeur : "+this.valeur+", il possÃ¨de "+this.or+" piÃ¨ces d'or, et "+this.cle+" clÃ©(s)";
 		return description2;
 	};
 	
@@ -70,7 +76,7 @@ Joueur2.initJoueur("Lila",250,200,10,1);
 var Monstre1=Object.create(Mechant);
 Monstre1.initMechant("Zorg Glub",20,500,"Troll",2000,10,1);
 
-console.log("bienvenue dans ce jeux d'aventure ! Dites bonjour à nos deux héros !");
+console.log("bienvenue dans ce jeux d'aventure ! Dites bonjour Ã  nos deux hÃ©ros !");
 
 console.log(Joueur1.decrire());
 console.log(Joueur2.decrire());

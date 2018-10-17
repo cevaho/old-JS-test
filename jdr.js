@@ -3,7 +3,7 @@ I used to modify existing script like slideshow, lightbox, countdown, form valid
 I also added coockies information depending on products, to hide or to show message depending on coockies
 but before this simple exercise, I have never used the real programation object,
 that's why I think it's interesting to show it
-the result will be seen in console, it's a small "game"w with heroes, monsters and properties
+the result will be seen in console, it's a small "game" with heroes, monsters and properties
 */
 
 

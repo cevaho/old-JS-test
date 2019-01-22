@@ -1,2 +1,3 @@
 # old-JS-test
-this is a modification done by Cedric !
+
+a js test that will be seen in console

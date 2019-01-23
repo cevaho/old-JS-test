@@ -6,4 +6,4 @@ a js test about POO, the result will be seen in console :
 
 ------
 
-- par __Cédric Van Hove__
+- made by __Cédric Van Hove__
